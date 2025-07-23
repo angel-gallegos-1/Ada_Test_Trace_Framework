@@ -16,6 +16,9 @@ procedure Main is
   procedure Search_Directory(Inp_Path: String;Out_Dir: String) is
 
 
+      --variable to pass in extra info to the State Machine. Ex: Previous State Info
+      --other: xxxx := xxxx
+
       --Call this function to add output of State Machine as String to end of Row
       procedure Add_Output(Row: in out Kind2_Trace_Parser.Cell_Vectors.Vector; Value: String) is 
 
@@ -45,7 +48,6 @@ procedure Main is
             --Convert Value to String then Call Add_Output to have Value stored in the Row. 
             --Enum-> Integer -> String -> to be added to end of the Row
             
-
       end State_Machine_Wrapper;
 
 
